@@ -1,0 +1,18 @@
+.my-button {
+    background-color: white; /* Change this to your desired background color */
+    border-radius: 20px; /* Change this to your desired border radius */
+    padding: 10px; /* Change this to your desired padding */
+    border: none; /* Remove the border */
+    color: black; /* Change the text color to white */
+    font-size: 16px; /* Change the font size */
+    cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+  }
+  
+  .button-text {
+    margin-right: 10px; /* Add some margin to the right of the text */
+  }
+  
+  .button-image {
+    width: 20px; /* Change the width of the image */
+    height: 20px; /* Change the height of the image */
+  }

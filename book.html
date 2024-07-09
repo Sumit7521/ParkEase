@@ -1,0 +1,66 @@
+<!--dtaes dropdown with upto 3 days only
+time dropdown, interval of 15 minutes
+radio button for type of ev chargers to be found on google-->
+
+
+<html>
+<head>
+	<link rel="stylesheet" href="style_book.css">
+	<link rel="shortcut icon" type="x-icon" href="images/Icon_512px.png">
+    <title>PowerEV Booking</title>
+</head>
+<body>
+	<div class="rounded">
+    <iframe style="filter:  contrast(1.2) opacity(0.7);" marginheight="0" marginwidth="0" title="map" scrolling="no"
+        src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Techno+Main+Salt+Lake/@22.5761756,88.4248406,17z/data=!3m1!4b1!4m6!3m5!1s0x3a02751a9d9c9e85:0x7fe665c781b10383!8m2!3d22.5761707!4d88.4270293!16s%2Fg%2F11fml2v54k&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+        width="100%" height="500px" frameborder="0" class="mapg"></iframe>
+	</div><br>
+	<p class="p-1"> Choose type of Parking :</p>
+	
+	<div class="p-2">
+		<label class="container">Public
+			<input type="radio" name="connector" value="ac1">
+			<span class="checkmark"></span>
+		</label><br>
+		<label class="container">Private
+			<input type="radio" name="connector" value="ac2">
+			<span class="checkmark"></span>
+		</label><br>
+		
+	</div>
+	<form>
+	  <label class="p-1">
+	    Choose your preferred Parking date: &nbsp;
+	    <input type="date" name="date" min="2023-03-25" max="2023-03-28" class="dp">
+	  </label>
+	</form>
+
+	<form action="/action_page.php">
+	  <label for="appt" class="p-1">Select a time: &nbsp;</label>
+	  <input type="time" id="appt" class="dp-1" name="appt">
+	</form>
+
+	<label for="hours" class="p-1">Choose the amount of time you want to Park: &nbsp;</label>
+  	<select name="hours" id="hours" class="dp-2">
+	    <option value="0000">00</option>
+	    <option value="0100">01</option>
+	    <option value="0200">02</option>
+	    <option value="0300">03</option>
+	    <option value="0400">04</option>
+	</select>
+	<label for="minutes" class="p-2"> hours</label>
+  	<select name="minutes" id="minutes" class="dp-2">
+	    <option value="00">00</option>
+	    <option value="15">15</option>
+	    <option value="30">30</option>
+	    <option value="45">45</option>
+	</select>
+	<label for="minutes" class="p-2"> minutes</label>
+	<p align="center">
+	<a href="">
+	<button type="submit" form="form_test" value="Submit" class="b1" >Submit</button>
+	</a>
+	</p>
+    
+</body>
+
